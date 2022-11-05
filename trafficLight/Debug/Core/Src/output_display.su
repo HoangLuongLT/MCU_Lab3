@@ -1,0 +1,8 @@
+output_display.c:16:6:blinkAllRedLed	8	static
+output_display.c:27:6:blinkAllYellowLed	8	static
+output_display.c:38:6:blinkAllGreenLed	8	static
+output_display.c:49:6:display7SEG	32	static
+output_display.c:79:6:turnOffAll	8	static
+output_display.c:84:6:turnOnOnlyRed	16	static
+output_display.c:91:6:turnOnOnlyYellow	16	static
+output_display.c:98:6:turnOnOnlyGreen	16	static

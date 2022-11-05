@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="case MODIFY_RED:"/>
+		<list key="findhistory">
+			<item value="case MODIFY_RED:"/>
+			<item value="void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)"/>
+		</list>
+	</section>
+</section>
