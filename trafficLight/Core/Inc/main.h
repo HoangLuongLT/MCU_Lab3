@@ -98,6 +98,10 @@ void Error_Handler(void);
 #define f1_GPIO_Port GPIOB
 #define g1_Pin GPIO_PIN_6
 #define g1_GPIO_Port GPIOB
+#define BUTTON_4_Pin GPIO_PIN_7
+#define BUTTON_4_GPIO_Port GPIOB
+#define LED_PED_Pin GPIO_PIN_8
+#define LED_PED_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

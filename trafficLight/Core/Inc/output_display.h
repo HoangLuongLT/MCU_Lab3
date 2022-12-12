@@ -17,4 +17,6 @@ void display7SEG(unsigned int led_enable,unsigned int number);
 void turnOnOnlyRed(int road);
 void turnOnOnlyYellow(int road);
 void turnOnOnlyGreen(int road);
+void pedGo();
+void pedStop();
 #endif /* INC_OUTPUT_DISPLAY_H_ */

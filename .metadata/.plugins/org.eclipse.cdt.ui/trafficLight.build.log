@@ -1,6 +1,7 @@
-22:24:34 **** Incremental Build of configuration Debug for project trafficLight ****
+02:50:13 **** Incremental Build of configuration Debug for project trafficLight ****
 make -j4 all 
-arm-none-eabi-gcc "../Core/Src/fsm_mode.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_mode.d" -MT"Core/Src/fsm_mode.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_mode.o"
+arm-none-eabi-gcc "../Core/Src/fsm_auto.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_auto.d" -MT"Core/Src/fsm_auto.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_auto.o"
+arm-none-eabi-gcc "../Core/Src/fsm_pedestrian.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_pedestrian.d" -MT"Core/Src/fsm_pedestrian.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_pedestrian.o"
 arm-none-eabi-gcc -o "trafficLight.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\221\MCU\MCU_Lab3\trafficLight\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="trafficLight.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: trafficLight.elf
  
@@ -9,15 +10,15 @@ arm-none-eabi-objdump -h -S  trafficLight.elf  > "trafficLight.list"
 arm-none-eabi-objcopy  -O ihex  trafficLight.elf  "trafficLight.hex"
 arm-none-eabi-objcopy  -O binary  trafficLight.elf  "trafficLight.bin"
    text	   data	    bss	    dec	    hex	filename
-  11008	     52	   1716	  12776	   31e8	trafficLight.elf
+   9608	    140	   1716	  11464	   2cc8	trafficLight.elf
 Finished building: default.size.stdout
- 
 Finished building: trafficLight.hex
+ 
 Finished building: trafficLight.bin
+ 
  
 Finished building: trafficLight.list
  
- 
 
-22:24:36 Build Finished. 0 errors, 0 warnings. (took 1s.312ms)
+02:50:14 Build Finished. 0 errors, 0 warnings. (took 815ms)
 

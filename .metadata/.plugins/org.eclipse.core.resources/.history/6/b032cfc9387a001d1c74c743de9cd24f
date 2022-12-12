@@ -1,0 +1,10 @@
+/*
+ * fsm_auto.c
+ *
+ *  Created on: Dec 12, 2022
+ *      Author: Luong
+ */
+
+#include "fsm_auto.h"
+
+void fsm_auto_processing();

@@ -1,0 +1,72 @@
+/*
+ * fsm_auto.c
+ *
+ *  Created on: Dec 12, 2022
+ *      Author: Luong
+ */
+
+#include "fsm_auto.h"
+#include "global.h"
+
+// value of time duration must be: green+yellow=red
+int redDuration = 5;
+int greenDuration = 3;
+int yellowDuration = 2;
+
+void fsm_auto_processing(){
+	switch (status) {
+		case AUTO_RED_GREEN:
+			if(timer0_flag==1){
+				setTimer0(1000);
+				if(++numberCounter == greenDuration){
+					status=	AUTO_RED_YELLOW;
+				}
+
+				turnOffAll();
+				turnOnOnlyRed(0);//ROAD 0
+				turnOnOnlyGreen(1);//ROAD 1
+			}
+			break;
+		case AUTO_RED_YELLOW:
+			if(timer0_flag==1){
+				setTimer0(1000);
+
+				if(++numberCounter == redDuration){
+					status=	AUTO_GREEN_RED;
+				}
+
+				turnOffAll();
+				turnOnOnlyRed(0);
+				turnOnOnlyYellow(1);
+			}
+			break;
+		case AUTO_GREEN_RED:
+			if(timer0_flag==1){
+				setTimer0(1000);
+
+				if(++numberCounter == (redDuration+greenDuration)){
+					status=	AUTO_YELLOW_RED;
+				}
+
+				turnOffAll();
+				turnOnOnlyGreen(0);
+				turnOnOnlyRed(1);
+			}
+			break;
+		case AUTO_YELLOW_RED:
+			if(timer0_flag==1){
+				setTimer0(1000);
+
+				if(++numberCounter == (2*redDuration)){
+					status=	AUTO_RED_GREEN;
+					numberCounter=0;
+				}
+
+				turnOffAll();
+				turnOnOnlyYellow(0);
+				turnOnOnlyRed(1);
+			break;
+		default:
+			break;
+	}
+}

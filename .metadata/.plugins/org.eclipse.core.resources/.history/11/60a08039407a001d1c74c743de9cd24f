@@ -1,0 +1,11 @@
+/*
+ * fsm_manual.c
+ *
+ *  Created on: Dec 12, 2022
+ *      Author: Luong
+ */
+#include "fsm_manual.h"
+
+void fsm_manual_processing(){
+
+}

@@ -1,0 +1,33 @@
+/*
+ * global.h
+ *
+ *  Created on: Dec 12, 2022
+ *      Author: Luong
+ */
+
+#ifndef INC_GLOBAL_H_
+#define INC_GLOBAL_H_
+
+#define AUTO_RED_GREEN 1
+#define AUTO_RED_YELLOW 2
+#define AUTO_GREEN_RED 3
+#define AUTO_YELLOW_RED 4
+
+extern int status;
+
+extern int numberCounter;
+
+extern int led;
+
+extern int redDuration;
+extern int greenDuration;
+extern int yellowDuration;
+
+#define MAN_RED		12
+#define MAN_GREEN	13
+#define MAN_YELLOW 	14
+
+#define PED_STOP	20
+#define PED_GO		21
+
+#endif /* INC_GLOBAL_H_ */

@@ -102,5 +102,10 @@ void turnOnOnlyGreen(int road){
 		HAL_GPIO_WritePin(GPIOA, LED_GREEN_2_Pin, GPIO_PIN_SET);
 	}
 }
-
+void pedGo(){
+	HAL_GPIO_WritePin(LED_PED_GPIO_Port, LED_PED_Pin, 1);
+}
+void pedStop(){
+	HAL_GPIO_WritePin(LED_PED_GPIO_Port, LED_PED_Pin, 0);
+}
 

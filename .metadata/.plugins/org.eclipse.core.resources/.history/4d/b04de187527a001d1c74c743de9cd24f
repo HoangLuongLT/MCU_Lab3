@@ -1,0 +1,25 @@
+/*
+ * fsm_pedestrian.c
+ *
+ *  Created on: Dec 13, 2022
+ *      Author: Luong
+ */
+#include "fsm_pedestrian.h"
+#include "global.h"
+#include "output_display.h"
+#include "software_timer.h"
+#include "button.h"
+
+void fsm_pedestrian_processing(){
+	switch (status_ped) {
+		case PED_STOP:
+
+			break;
+		case PED_GO:
+
+			break;
+		default:
+			break;
+	}
+}
+

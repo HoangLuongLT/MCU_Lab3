@@ -6,3 +6,5 @@ output_display.c:79:6:turnOffAll	8	static
 output_display.c:84:6:turnOnOnlyRed	16	static
 output_display.c:91:6:turnOnOnlyYellow	16	static
 output_display.c:98:6:turnOnOnlyGreen	16	static
+output_display.c:105:6:pedGo	8	static
+output_display.c:108:6:pedStop	8	static
