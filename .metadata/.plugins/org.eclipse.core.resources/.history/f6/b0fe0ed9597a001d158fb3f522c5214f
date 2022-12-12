@@ -20,7 +20,7 @@ void fsm_pedestrian_processing(){
 				change=0;
 			}
 			if(status<=4&&status>=1){
-				if(numberCounter<=redDuration&&numberCounter>=1){
+				if(numberCounter<=5&&numberCounter>=1){
 					status_ped=PED_GO;
 					change=1;
 				}
@@ -36,7 +36,7 @@ void fsm_pedestrian_processing(){
 				change=0;
 			}
 			if(status<=4&&status>=1){
-				if(numberCounter>=(redDuration+1)||numberCounter==0){
+				if(numberCounter>=6||numberCounter==0){
 					status_ped=PED_STOP;
 					change =1;
 				}
